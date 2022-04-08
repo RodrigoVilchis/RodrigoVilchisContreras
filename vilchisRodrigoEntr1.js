@@ -21,12 +21,12 @@ class Usuario{
             return this.pet.length
         }
 
-        addBook (nombreB, autorB){
-            return this.book.push(`{Nombre: ${nombreB}, Autor: ${autorB}`)
+        addBook(nombreB, autorB){
+            this.book.push({ nombre: nombreB, autor: autorB})
         }
 
         getBookNames(){
-            return this.book[0]
+            return this.book.map((libro)=>{return libro.nombre})
         }
 }
 
@@ -38,6 +38,7 @@ usuario1.addMascota("Perro")
 usuario1.addMascota("Gato")
 usuario1.addMascota("Perico")
 usuario1.addMascota("Rana")
+usuario1.addMascota("Hurón")
 console.log(usuario1, usuario2)
 console.log(usuario1.countMascotas())
 
