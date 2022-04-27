@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Principito",
+    "price": 250,
+    "thumbnail": "https://principito/book",
+    "id": 1
+  },
+  {
+    "title": "Libro de los piratas",
+    "price": 300,
+    "thumbnail": "https://libro-pirata/book",
+    "id": 2
+  },
+  {
+    "title": "El señor de los anillos",
+    "price": 450,
+    "thumbnail": "https://libro-anillos-se/book",
+    "id": 3
+  },
+  {
+    "title": "Harry Potter",
+    "price": 320,
+    "thumbnail": "https://libro-de-magia/book",
+    "id": 4
+  },
+  {
+    "title": "El libro vaquero",
+    "price": 160,
+    "thumbnail": "https://libro-de-cultura/book",
+    "id": 5
+  },
+  {
+    "title": "One Piece",
+    "price": 420,
+    "thumbnail": "https://una-eternidad/book",
+    "id": 6
+  },
+  {
+    "title": "La voladora",
+    "price": 69,
+    "thumbnail": "https://la-que-vuela/book",
+    "id": 7
+  }
+]
