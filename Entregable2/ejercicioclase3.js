@@ -73,14 +73,15 @@ class Contenedor {
 
   async deleteById(idProducto) {
     try {
-      const ejemplo = await this.getAll(true) //await this.getAll();
-      const data = JSON.parse(ejemplo)//console.log(this.products);
-      //console.log(await this.getAll());
-      //console.log(items);
-      //const productos = JSON.parse(items);
-      let deleteId = data.filter((item) => item.id != idProducto);
-      return deleteId
-      //fs.promise.writeFileSync(this.file,JSON.stringify(deleteId, null, 2));
+      const archivo = await this.getAll(true) //await this.getAll();
+      const data = JSON.parse(archivo)//console.log(this.products);
+      //console.log(data)
+      let dataDeleteId = data.filter((item) => item.id != idProducto);
+      //console.log(dataDeleteId)
+      //console.log("aaaa", typeof(dataDeleteId))
+      await fs.promises.writeFile(this.file, JSON.stringify(dataDeleteId, null, 2));
+      console.log("aaaa", dataDeleteId)
+      //return deleteId
     } catch (err) {
       console.log("Hubo un error al borrar el producto: "+err);
     }
